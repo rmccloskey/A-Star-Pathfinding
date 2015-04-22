@@ -2,10 +2,8 @@
 using System.Collections;
 
 /**
- * Handles AI line of sight detection of player
+ * Handles AI line of sight detection of target
  * using a raycast cone.
- * 
- * "Player" tag MUST be applied to target.
  */
 public class RaycastCone : MonoBehaviour
 {
@@ -13,35 +11,35 @@ public class RaycastCone : MonoBehaviour
 	public float viewRange = 15f;
 
 	// Reference to the target object
-	public GameObject player;
+	public GameObject target;
 
-	// Is the player in the vision area of the AI?
-	bool playerInSight = false;
+	// Is the target in the vision area of the AI?
+	bool targetInSight = false;
 
 	void Awake()
 	{
-		player = player == null ? GameObject.FindGameObjectWithTag( "Player" ) : null;
+		target = target == null ? GameObject.FindGameObjectWithTag( "Player" ) : null;
 	}
 
 	void Update()
 	{
-		if(player != null)
-			playerInSight = IsTargetVisible();
+		if(target != null)
+			targetInSight = IsTargetVisible();
 	}
 
 	bool IsTargetVisible()
 	{
 		RaycastHit hit;
 
-		Vector3 rayDirection = player.transform.position - transform.position;
+		Vector3 rayDirection = target.transform.position - transform.position;
 
-		// If player is within field of view
+		// If target is within field of view
 		if((Vector3.Angle(rayDirection, transform.forward)) < fieldOfView / 2)
 		{
 			// Perform a raycast to check if view is obstructed
 			if(Physics.Raycast(transform.position, rayDirection, out hit, viewRange))
 			{
-				if (hit.collider.gameObject == player)
+				if (hit.collider.gameObject == target)
 					return true;
 			}
 		}
