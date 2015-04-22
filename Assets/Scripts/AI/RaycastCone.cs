@@ -13,19 +13,20 @@ public class RaycastCone : MonoBehaviour
 	public float viewRange = 15f;
 
 	// Reference to the target object
-	GameObject player;
+	public GameObject player;
 
 	// Is the player in the vision area of the AI?
 	bool playerInSight = false;
 
 	void Awake()
 	{
-		player = GameObject.FindGameObjectWithTag( "Player" );
+		player = player == null ? GameObject.FindGameObjectWithTag( "Player" ) : null;
 	}
 
 	void Update()
 	{
-		playerInSight = IsTargetVisible();
+		if(player != null)
+			playerInSight = IsTargetVisible();
 	}
 
 	bool IsTargetVisible()
