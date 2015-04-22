@@ -79,9 +79,11 @@ public class NPC : MonoBehaviour
 
 			Vector3 direction = wp - transform.position;
 
-			direction = direction.normalized * speed * Time.deltaTime;
+			transform.position = Vector3.MoveTowards( transform.position, wp, speed * Time.deltaTime );
 
-			transform.position += direction;
+			//direction = direction.normalized * speed * Time.deltaTime;
+
+			//transform.position += direction;
 
 			// Smooth transition between rotations - Similar to transform.LookAt(),
 			// but doesn't instantly swap rotation value
@@ -97,7 +99,7 @@ public class NPC : MonoBehaviour
 		}
 		else
 		{
-			if(loop)
+			if(loop && path.Length > 1)
 			{
 				Array.Reverse( path );
 				nextWaypoint = 0;
