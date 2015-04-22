@@ -24,6 +24,13 @@ public class NPC : MonoBehaviour
 	// Off by default.
 	public bool loop = false;
 
+	public enum AI_Calculator
+	{
+		A_Star,
+		Table
+	};
+	public AI_Calculator aiType = AI_Calculator.A_Star;
+
 	void Start()
 	{
 		m_Animator = GetComponent<Animator>();
@@ -80,10 +87,6 @@ public class NPC : MonoBehaviour
 			Vector3 direction = wp - transform.position;
 
 			transform.position = Vector3.MoveTowards( transform.position, wp, speed * Time.deltaTime );
-
-			//direction = direction.normalized * speed * Time.deltaTime;
-
-			//transform.position += direction;
 
 			// Smooth transition between rotations - Similar to transform.LookAt(),
 			// but doesn't instantly swap rotation value
