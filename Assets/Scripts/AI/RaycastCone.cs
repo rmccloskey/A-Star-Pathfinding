@@ -14,7 +14,9 @@ public class RaycastCone : MonoBehaviour
 	public GameObject target;
 
 	// Is the target in the vision area of the AI?
-	bool targetInSight = false;
+	public bool targetInSight = false;
+
+	public Transform lastTargetSighting;
 
 	void Awake()
 	{
@@ -40,7 +42,10 @@ public class RaycastCone : MonoBehaviour
 			if(Physics.Raycast(transform.position, rayDirection, out hit, viewRange))
 			{
 				if (hit.collider.gameObject == target)
+				{
+					lastTargetSighting = hit.transform;
 					return true;
+				}	
 			}
 		}
 

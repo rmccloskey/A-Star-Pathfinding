@@ -61,6 +61,24 @@ public class TablePathfinding : MonoBehaviour
 		return SimplifyPath( waypoints );
 	}
 
+	public int GetIndexOfClosestNode(Transform position)
+	{
+		float minDistance = 9999f;
+		int indexOfClosest = -1;
+
+		for(int i = 0; i < grid.nodes.Length; i++)
+		{
+			float distance = Mathf.Abs(Vector3.Distance( position.position, grid.nodes[i].position ));
+			if(distance < minDistance)
+			{
+				minDistance = distance;
+				indexOfClosest = i;
+			}
+		}
+
+		return indexOfClosest;
+	}
+
 	Vector3[] SimplifyPath(List<Vector3> path)
 	{
 		return path.ToArray();

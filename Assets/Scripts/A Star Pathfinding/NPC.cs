@@ -16,6 +16,8 @@ public class NPC : MonoBehaviour
 
 	Pathfinding pathfinder;
 
+	TablePathfinding table_pathfinder;
+
 	public float radius = 1f;
 
 	int nextWaypoint = 0;
@@ -24,18 +26,25 @@ public class NPC : MonoBehaviour
 	// Off by default.
 	public bool loop = false;
 
+	RaycastCone vision;
+
 	public enum AI_Calculator
 	{
 		A_Star,
 		Table
 	};
-	public AI_Calculator aiType = AI_Calculator.A_Star;
+	// Don't change this, unless you want your computer to freeze
+	AI_Calculator aiType = AI_Calculator.A_Star;
 
 	void Start()
 	{
 		m_Animator = GetComponent<Animator>();
 
+		vision = GetComponentInChildren<RaycastCone>();
+
 		pathfinder = GameObject.FindObjectOfType<Pathfinding>();
+
+		table_pathfinder = GameObject.FindObjectOfType<TablePathfinding>();
 
 		foreach(Animator anim in GetComponentsInChildren<Animator>())
 		{
@@ -48,8 +57,19 @@ public class NPC : MonoBehaviour
 				
 		}
 
-		path = pathfinder.FindPath( transform.position, target.position );
-		CheckGroundLevelAtAllNodes();
+		if(aiType == AI_Calculator.A_Star)
+		{
+			path = pathfinder.FindPath( transform.position, target.position );
+			CheckGroundLevelAtAllNodes();
+		}
+		else
+		{
+			int index = table_pathfinder.GetIndexOfClosestNode( target );
+			Debug.Log( "Index is " + index );
+			if(index > -1)
+				path = table_pathfinder.FindPath( 0, index );
+			Debug.Log( "Path successfully created" );
+		}
 	}
 
 	// This is just to automagically adjust the position of nodes so that the NPC
@@ -66,13 +86,63 @@ public class NPC : MonoBehaviour
 
 	void Update()
 	{
+		if (vision.targetInSight)
+		{
+			try
+			{
+				Vector3 pos = target.position;
+
+				float distance = Vector3.Distance( pos, vision.lastTargetSighting.position );
+
+				//if(distance > 1)
+				//{
+					target = vision.lastTargetSighting;
+					path = pathfinder.FindPath( transform.position, target.position );
+					nextWaypoint = 0;
+				//}
+				speed = 1f;
+			}
+			catch(System.NullReferenceException e)
+			{
+				;
+			}
+			
+		}
+		else
+		{
+			if(speed == 1)
+			{
+				target = targets[UnityEngine.Random.Range( 0, targets.Length )];
+				path = pathfinder.FindPath( transform.position, target.position );
+				nextWaypoint = 0;
+			}
+			
+			speed = 0.5f;
+		}
+			
+
 		if (path.Length > 0)
 			MoveTowardsDestination();
 
 		if(Input.GetKeyUp(KeyCode.R))
 		{
 			target = targets[UnityEngine.Random.Range( 0, targets.Length )];
-			path = pathfinder.FindPath( transform.position, target.position );
+			if (aiType == AI_Calculator.A_Star)
+			{
+				path = pathfinder.FindPath( transform.position, target.position );
+				nextWaypoint = 0;
+				CheckGroundLevelAtAllNodes();
+			}
+			else
+			{
+				int index = table_pathfinder.GetIndexOfClosestNode( target );
+				if (index > -1)
+				{
+					path = table_pathfinder.FindPath( 0, index );
+					nextWaypoint = 0;
+				}
+					
+			}
 		}
 	}
 
@@ -109,7 +179,6 @@ public class NPC : MonoBehaviour
 			}
 			else
 				m_Animator.SetFloat( "Speed", 0 );
-
 		}
 			
 	}

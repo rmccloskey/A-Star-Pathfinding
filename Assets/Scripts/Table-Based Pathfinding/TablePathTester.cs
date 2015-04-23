@@ -7,6 +7,9 @@ public class TablePathTester : MonoBehaviour
 	TableGrid grid;
 	TablePathfinding pathfinder;
 
+
+	public Transform target;
+
 	Vector3[] path = new Vector3[0];
 
 	[Range(0, 12)]
