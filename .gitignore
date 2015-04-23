@@ -55,7 +55,6 @@ Library/
 bin/
 obj/
 UnityVS/
-*.meta
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #

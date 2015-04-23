@@ -1,0 +1,1194 @@
+fileFormatVersion: 2
+guid: 3be880b18667d2d42ac38eaccec5c15d
+timeCreated: 1429630986
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Ankle_L_IK
+    100002: Ankle_R_IK
+    100004: bn_chest
+    100006: bn_head
+    100008: bn_hip
+    100010: bn_L_armlower
+    100012: bn_L_armupper
+    100014: bn_L_foot
+    100016: bn_L_hand
+    100018: bn_L_shin
+    100020: bn_L_thigh
+    100022: bn_neck
+    100024: bn_R_armlower
+    100026: bn_R_armupper
+    100028: bn_R_foot
+    100030: bn_R_hand
+    100032: bn_R_shin
+    100034: bn_R_thigh
+    100036: body
+    100038: Ctrl_chest
+    100040: Ctrl_COG
+    100042: Ctrl_Core
+    100044: Ctrl_head
+    100046: Ctrl_hip
+    100048: Ctrl_Knee_L
+    100050: Ctrl_Knee_R
+    100052: Ctrl_L_Elbow
+    100054: Ctrl_L_Hand
+    100056: Ctrl_Leg_L
+    100058: Ctrl_Leg_R
+    100060: Ctrl_neck
+    100062: Ctrl_R_Elbow
+    100064: Ctrl_R_Hand
+    100066: face
+    100068: Global Control
+    100070: glove1
+    100072: glove2
+    100074: hair
+    100076: hat
+    100078: helper_controller
+    100080: helper_controllersphere
+    100082: IK Chain001
+    100084: IK Chain002
+    100086: IK_L_Hand
+    100088: IK_R_Hand
+    100090: //RootNode
+    100092: PointCtrl_hand_L
+    100094: PointCtrl_hand_R
+    100096: PointCtrl_head
+    100098: PointCtrl_Hip
+    100100: PointCtrl_neck
+    100102: PointCtrl_Spine
+    100104: PointH_L_Ankle
+    100106: PointH_L_Toe
+    100108: PointH_R_Ankle
+    100110: PointH_R_Toe
+    100112: pupil1
+    100114: pupil2
+    400000: Ankle_L_IK
+    400002: Ankle_R_IK
+    400004: bn_chest
+    400006: bn_head
+    400008: bn_hip
+    400010: bn_L_armlower
+    400012: bn_L_armupper
+    400014: bn_L_foot
+    400016: bn_L_hand
+    400018: bn_L_shin
+    400020: bn_L_thigh
+    400022: bn_neck
+    400024: bn_R_armlower
+    400026: bn_R_armupper
+    400028: bn_R_foot
+    400030: bn_R_hand
+    400032: bn_R_shin
+    400034: bn_R_thigh
+    400036: body
+    400038: Ctrl_chest
+    400040: Ctrl_COG
+    400042: Ctrl_Core
+    400044: Ctrl_head
+    400046: Ctrl_hip
+    400048: Ctrl_Knee_L
+    400050: Ctrl_Knee_R
+    400052: Ctrl_L_Elbow
+    400054: Ctrl_L_Hand
+    400056: Ctrl_Leg_L
+    400058: Ctrl_Leg_R
+    400060: Ctrl_neck
+    400062: Ctrl_R_Elbow
+    400064: Ctrl_R_Hand
+    400066: face
+    400068: Global Control
+    400070: glove1
+    400072: glove2
+    400074: hair
+    400076: hat
+    400078: helper_controller
+    400080: helper_controllersphere
+    400082: IK Chain001
+    400084: IK Chain002
+    400086: IK_L_Hand
+    400088: IK_R_Hand
+    400090: //RootNode
+    400092: PointCtrl_hand_L
+    400094: PointCtrl_hand_R
+    400096: PointCtrl_head
+    400098: PointCtrl_Hip
+    400100: PointCtrl_neck
+    400102: PointCtrl_Spine
+    400104: PointH_L_Ankle
+    400106: PointH_L_Toe
+    400108: PointH_R_Ankle
+    400110: PointH_R_Toe
+    400112: pupil1
+    400114: pupil2
+    2300000: Ctrl_Leg_L
+    2300002: Ctrl_Leg_R
+    3300000: Ctrl_Leg_L
+    3300002: Ctrl_Leg_R
+    4300000: body
+    4300002: glove1
+    4300004: glove2
+    4300006: face
+    4300008: pupil1
+    4300010: pupil2
+    4300012: hat
+    4300014: hair
+    4300016: Ctrl_Leg_L
+    4300018: Ctrl_Leg_R
+    7400000: Run
+    7400002: Idle
+    7400004: Turn
+    7400006: Walk
+    9500000: //RootNode
+    13700000: body
+    13700002: face
+    13700004: glove1
+    13700006: glove2
+    13700008: hair
+    13700010: hat
+    13700012: pupil1
+    13700014: pupil2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Run
+      takeName: Take 001
+      firstFrame: 20
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Ankle_L_IK
+        weight: 1
+      - path: Ankle_R_IK
+        weight: 1
+      - path: body
+        weight: 1
+      - path: face
+        weight: 1
+      - path: Global Control
+        weight: 1
+      - path: Global Control/Ctrl_Core
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_L_armupper
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_L_armupper/bn_L_armlower
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_L_armupper/bn_L_armlower/bn_L_hand
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_neck
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_neck/bn_head
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_R_armupper
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_R_armupper/bn_R_armlower
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_R_armupper/bn_R_armlower/bn_R_hand
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_L_thigh
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_L_thigh/bn_L_shin
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_L_thigh/bn_L_shin/bn_L_foot
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_R_thigh
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_R_thigh/bn_R_shin
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_R_thigh/bn_R_shin/bn_R_foot
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_chest
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_chest/Ctrl_neck
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_chest/Ctrl_neck/Ctrl_head
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_chest/Ctrl_neck/Ctrl_head/PointCtrl_head
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_chest/Ctrl_neck/PointCtrl_neck
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_chest/PointCtrl_Spine
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_hip
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_hip/PointCtrl_Hip
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_L_Elbow
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_L_Hand
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_L_Hand/PointCtrl_hand_L
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_R_Elbow
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_R_Hand
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_R_Hand/PointCtrl_hand_R
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Knee_L
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Knee_R
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Leg_L
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Leg_L/PointH_L_Ankle
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Leg_L/PointH_L_Ankle/PointH_L_Toe
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Leg_R
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Leg_R/PointH_R_Ankle
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Leg_R/PointH_R_Ankle/PointH_R_Toe
+        weight: 1
+      - path: glove1
+        weight: 1
+      - path: glove2
+        weight: 1
+      - path: hair
+        weight: 1
+      - path: hat
+        weight: 1
+      - path: helper_controller
+        weight: 1
+      - path: helper_controllersphere
+        weight: 1
+      - path: IK Chain001
+        weight: 1
+      - path: IK Chain002
+        weight: 1
+      - path: IK_L_Hand
+        weight: 1
+      - path: IK_R_Hand
+        weight: 1
+      - path: pupil1
+        weight: 1
+      - path: pupil2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 150
+      lastFrame: 260
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Ankle_L_IK
+        weight: 1
+      - path: Ankle_R_IK
+        weight: 1
+      - path: body
+        weight: 1
+      - path: face
+        weight: 1
+      - path: Global Control
+        weight: 1
+      - path: Global Control/Ctrl_Core
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_L_armupper
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_L_armupper/bn_L_armlower
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_L_armupper/bn_L_armlower/bn_L_hand
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_neck
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_neck/bn_head
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_R_armupper
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_R_armupper/bn_R_armlower
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_R_armupper/bn_R_armlower/bn_R_hand
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_L_thigh
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_L_thigh/bn_L_shin
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_L_thigh/bn_L_shin/bn_L_foot
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_R_thigh
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_R_thigh/bn_R_shin
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_R_thigh/bn_R_shin/bn_R_foot
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_chest
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_chest/Ctrl_neck
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_chest/Ctrl_neck/Ctrl_head
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_chest/Ctrl_neck/Ctrl_head/PointCtrl_head
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_chest/Ctrl_neck/PointCtrl_neck
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_chest/PointCtrl_Spine
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_hip
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_hip/PointCtrl_Hip
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_L_Elbow
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_L_Hand
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_L_Hand/PointCtrl_hand_L
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_R_Elbow
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_R_Hand
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_R_Hand/PointCtrl_hand_R
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Knee_L
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Knee_R
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Leg_L
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Leg_L/PointH_L_Ankle
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Leg_L/PointH_L_Ankle/PointH_L_Toe
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Leg_R
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Leg_R/PointH_R_Ankle
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Leg_R/PointH_R_Ankle/PointH_R_Toe
+        weight: 1
+      - path: glove1
+        weight: 1
+      - path: glove2
+        weight: 1
+      - path: hair
+        weight: 1
+      - path: hat
+        weight: 1
+      - path: helper_controller
+        weight: 1
+      - path: helper_controllersphere
+        weight: 1
+      - path: IK Chain001
+        weight: 1
+      - path: IK Chain002
+        weight: 1
+      - path: IK_L_Hand
+        weight: 1
+      - path: IK_R_Hand
+        weight: 1
+      - path: pupil1
+        weight: 1
+      - path: pupil2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Turn
+      takeName: Take 001
+      firstFrame: 500
+      lastFrame: 525
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Ankle_L_IK
+        weight: 1
+      - path: Ankle_R_IK
+        weight: 1
+      - path: body
+        weight: 1
+      - path: face
+        weight: 1
+      - path: Global Control
+        weight: 1
+      - path: Global Control/Ctrl_Core
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_L_armupper
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_L_armupper/bn_L_armlower
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_L_armupper/bn_L_armlower/bn_L_hand
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_neck
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_neck/bn_head
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_R_armupper
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_R_armupper/bn_R_armlower
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_R_armupper/bn_R_armlower/bn_R_hand
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_L_thigh
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_L_thigh/bn_L_shin
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_L_thigh/bn_L_shin/bn_L_foot
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_R_thigh
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_R_thigh/bn_R_shin
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_R_thigh/bn_R_shin/bn_R_foot
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_chest
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_chest/Ctrl_neck
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_chest/Ctrl_neck/Ctrl_head
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_chest/Ctrl_neck/Ctrl_head/PointCtrl_head
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_chest/Ctrl_neck/PointCtrl_neck
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_chest/PointCtrl_Spine
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_hip
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_hip/PointCtrl_Hip
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_L_Elbow
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_L_Hand
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_L_Hand/PointCtrl_hand_L
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_R_Elbow
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_R_Hand
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_R_Hand/PointCtrl_hand_R
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Knee_L
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Knee_R
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Leg_L
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Leg_L/PointH_L_Ankle
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Leg_L/PointH_L_Ankle/PointH_L_Toe
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Leg_R
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Leg_R/PointH_R_Ankle
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Leg_R/PointH_R_Ankle/PointH_R_Toe
+        weight: 1
+      - path: glove1
+        weight: 1
+      - path: glove2
+        weight: 1
+      - path: hair
+        weight: 1
+      - path: hat
+        weight: 1
+      - path: helper_controller
+        weight: 1
+      - path: helper_controllersphere
+        weight: 1
+      - path: IK Chain001
+        weight: 1
+      - path: IK Chain002
+        weight: 1
+      - path: IK_L_Hand
+        weight: 1
+      - path: IK_R_Hand
+        weight: 1
+      - path: pupil1
+        weight: 1
+      - path: pupil2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 3100
+      lastFrame: 3160
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Ankle_L_IK
+        weight: 1
+      - path: Ankle_R_IK
+        weight: 1
+      - path: body
+        weight: 1
+      - path: face
+        weight: 1
+      - path: Global Control
+        weight: 1
+      - path: Global Control/Ctrl_Core
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_L_armupper
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_L_armupper/bn_L_armlower
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_L_armupper/bn_L_armlower/bn_L_hand
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_neck
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_neck/bn_head
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_R_armupper
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_R_armupper/bn_R_armlower
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_chest/bn_R_armupper/bn_R_armlower/bn_R_hand
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_L_thigh
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_L_thigh/bn_L_shin
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_L_thigh/bn_L_shin/bn_L_foot
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_R_thigh
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_R_thigh/bn_R_shin
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/bn_hip/bn_R_thigh/bn_R_shin/bn_R_foot
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_chest
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_chest/Ctrl_neck
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_chest/Ctrl_neck/Ctrl_head
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_chest/Ctrl_neck/Ctrl_head/PointCtrl_head
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_chest/Ctrl_neck/PointCtrl_neck
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_chest/PointCtrl_Spine
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_hip
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_hip/PointCtrl_Hip
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_L_Elbow
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_L_Hand
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_L_Hand/PointCtrl_hand_L
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_R_Elbow
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_R_Hand
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_COG/Ctrl_R_Hand/PointCtrl_hand_R
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Knee_L
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Knee_R
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Leg_L
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Leg_L/PointH_L_Ankle
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Leg_L/PointH_L_Ankle/PointH_L_Toe
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Leg_R
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Leg_R/PointH_R_Ankle
+        weight: 1
+      - path: Global Control/Ctrl_Core/Ctrl_Leg_R/PointH_R_Ankle/PointH_R_Toe
+        weight: 1
+      - path: glove1
+        weight: 1
+      - path: glove2
+        weight: 1
+      - path: hair
+        weight: 1
+      - path: hat
+        weight: 1
+      - path: helper_controller
+        weight: 1
+      - path: helper_controllersphere
+        weight: 1
+      - path: IK Chain001
+        weight: 1
+      - path: IK Chain002
+        weight: 1
+      - path: IK_L_Hand
+        weight: 1
+      - path: IK_R_Hand
+        weight: 1
+      - path: pupil1
+        weight: 1
+      - path: pupil2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00400000019
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: bn_hip
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bn_L_thigh
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bn_R_thigh
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bn_L_shin
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bn_R_shin
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bn_L_foot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bn_R_foot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bn_chest
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bn_neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bn_head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bn_L_armupper
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bn_R_armupper
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bn_L_armlower
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bn_R_armlower
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bn_L_hand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: bn_R_hand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Mario(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Ankle_L_IK
+      position: {x: -.0466930903, y: .039367985, z: -.00664710999}
+      rotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Ankle_R_IK
+      position: {x: .0458645485, y: .0393734165, z: -.00664691068}
+      rotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: body
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: face
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Global Control
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Ctrl_Core
+      position: {x: -0, y: -1.07573364e-08, z: .246099159}
+      rotation: {x: 2.38497613e-08, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Ctrl_COG
+      position: {x: -0, y: .00506668119, z: -.057938192}
+      rotation: {x: 1.49011626e-07, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: .999999881, z: .999999881}
+      transformModified: 1
+    - name: Ctrl_chest
+      position: {x: -.000568753749, y: .0434805825, z: .0420440845}
+      rotation: {x: .5, y: .500000179, z: .49999994, w: .499999881}
+      scale: {x: .13559325, y: .13559325, z: .13559325}
+      transformModified: 1
+    - name: Ctrl_neck
+      position: {x: -.272945315, y: .862558901, z: .00419363473}
+      rotation: {x: -.49999997, y: -.50000006, z: -.49999997, w: .50000006}
+      scale: {x: 7.37499809, y: 7.37499809, z: 7.37499809}
+      transformModified: 1
+    - name: Ctrl_head
+      position: {x: -5.93602749e-07, y: .00414143316, z: .04497803}
+      rotation: {x: -.706880987, y: .0176909585, z: .706889689, w: -.0176994968}
+      scale: {x: 1, y: 1.00000012, z: 1.00000024}
+      transformModified: 1
+    - name: PointCtrl_head
+      position: {x: -0, y: 0, z: 3.05171142e-08}
+      rotation: {x: 2.00420459e-06, y: 5.58957103e-09, z: -9.12696123e-08, w: 1}
+      scale: {x: 1.00000012, y: .999999881, z: .999999762}
+      transformModified: 1
+    - name: PointCtrl_neck
+      position: {x: -7.15226711e-10, y: 7.62939489e-09, z: 0}
+      rotation: {x: .706366181, y: -.0324487947, z: -.7063573, w: .0324536487}
+      scale: {x: .99999994, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: PointCtrl_Spine
+      position: {x: -.299477547, y: -.0102705089, z: .00419454975}
+      rotation: {x: -.696281493, y: .717768848, z: -1.13381327e-06, w: 4.34841809e-07}
+      scale: {x: 7.37499762, y: 7.37499857, z: 7.37499857}
+      transformModified: 1
+    - name: Ctrl_hip
+      position: {x: -1.19781498e-06, y: .00258290838, z: .0212867595}
+      rotation: {x: .707106829, y: 0, z: -0, w: .707106829}
+      scale: {x: .13559325, y: .13559325, z: .13559325}
+      transformModified: 1
+    - name: PointCtrl_Hip
+      position: {x: 8.85010104e-06, y: .142814711, z: -.002142807}
+      rotation: {x: .482053339, y: -.517329872, z: -.482047528, w: .517324448}
+      scale: {x: 7.37499809, y: 7.37499809, z: 7.37499809}
+      transformModified: 1
+    - name: Ctrl_L_Elbow
+      position: {x: -.131068483, y: .10544619, z: .135283083}
+      rotation: {x: -4.26325641e-14, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Ctrl_L_Hand
+      position: {x: -.203462377, y: .0112210074, z: .135283515}
+      rotation: {x: -4.26325641e-14, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PointCtrl_hand_L
+      position: {x: 3.05175796e-08, y: 6.25610426e-07, z: 6.10351591e-08}
+      rotation: {x: -.000170935629, y: 9.23697462e-06, z: .0211830977, w: .999775589}
+      scale: {x: 1.00000012, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Ctrl_R_Elbow
+      position: {x: .13199994, y: .10544619, z: .135283083}
+      rotation: {x: -4.26325641e-14, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Ctrl_R_Hand
+      position: {x: .203118697, y: .011221013, z: .135283515}
+      rotation: {x: -4.26325641e-14, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PointCtrl_hand_R
+      position: {x: 4.57763711e-08, y: -5.95092786e-07, z: 9.15527423e-08}
+      rotation: {x: -1.65127694e-05, y: -.000170148822, z: .999775589, w: .0211860482}
+      scale: {x: .999999881, y: 1.00000036, z: 1.00000012}
+      transformModified: 1
+    - name: bn_hip
+      position: {x: 2.21471966e-10, y: 3.05175796e-08, z: -3.05175796e-08}
+      rotation: {x: .706666827, y: -.0249486081, z: -.706666529, w: .0249402076}
+      scale: {x: 1.00000036, y: 1.00000024, z: 1}
+      transformModified: 1
+    - name: bn_chest
+      position: {x: -.0407529026, y: 2.8610232e-09, z: -2.42903497e-09}
+      rotation: {x: -4.60469255e-06, y: 1.70259e-07, z: -.0200882331, w: .999798238}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: bn_R_armupper
+      position: {x: -.0946745053, y: -.000275403028, z: -.0228936728}
+      rotation: {x: -.0290287286, y: -.706462085, z: .00866615865, w: .707102239}
+      scale: {x: 1.00000024, y: 1, z: .99999994}
+      transformModified: 1
+    - name: bn_R_armlower
+      position: {x: -.107984632, y: -4.76837192e-09, z: 0}
+      rotation: {x: 1.74603088e-07, y: -4.89623562e-05, z: -.0305227619, w: .99953407}
+      scale: {x: 1, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: bn_R_hand
+      position: {x: -.0723960623, y: -2.28881856e-08, z: -3.05175796e-08}
+      rotation: {x: -.000959230121, y: -2.40409881e-05, z: -.0173194949, w: .999849558}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: bn_neck
+      position: {x: -.118404396, y: 2.09808366e-08, z: 2.32446791e-08}
+      rotation: {x: -4.38201369e-06, y: 5.82481107e-06, z: .0307097714, w: .999528348}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: bn_head
+      position: {x: -.0451681875, y: 1.90734872e-09, z: 6.78002854e-09}
+      rotation: {x: -1.80177108e-06, y: -1.2322731e-05, z: -.020880254, w: .999781966}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: bn_L_armupper
+      position: {x: -.0946745053, y: -.000275444065, z: .0232372805}
+      rotation: {x: .707102895, y: .00866649114, z: -.70646137, w: -.0290297139}
+      scale: {x: .99999994, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: bn_L_armlower
+      position: {x: -.107984632, y: -1.90734872e-09, z: 0}
+      rotation: {x: -1.76560988e-07, y: -4.88963487e-05, z: .0305227563, w: .99953407}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: bn_L_hand
+      position: {x: -.0723960251, y: 1.14440928e-08, z: 3.05175796e-08}
+      rotation: {x: .000617604586, y: -3.02423614e-05, z: .0173195098, w: .999849856}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: bn_L_thigh
+      position: {x: -5.15747115e-06, y: -8.25109528e-05, z: .0466931015}
+      rotation: {x: -1.88970191e-07, y: 5.89562023e-06, z: .999350309, w: .0360422842}
+      scale: {x: .999999762, y: .999999702, z: .99999994}
+      transformModified: 1
+    - name: bn_L_shin
+      position: {x: -.0746599063, y: -1.76429769e-08, z: 0}
+      rotation: {x: -3.15893514e-12, y: -3.64999891e-10, z: -.00855630264, w: .999963403}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: bn_L_foot
+      position: {x: -.0741399601, y: -1.71661387e-08, z: 0}
+      rotation: {x: -1.94131204e-07, y: 4.84415068e-08, z: .691037118, w: .722819269}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: bn_R_thigh
+      position: {x: -5.15747115e-06, y: -8.35790634e-05, z: -.0458645672}
+      rotation: {x: .0360437743, y: .99935025, z: .000163346383, w: 7.79838138e-06}
+      scale: {x: .999999702, y: .99999994, z: 1}
+      transformModified: 1
+    - name: bn_R_shin
+      position: {x: -.0746599585, y: 1.57356261e-08, z: -7.62939489e-09}
+      rotation: {x: -3.056997e-06, y: 1.36767625e-07, z: .00855653919, w: .999963403}
+      scale: {x: 1.00000012, y: 1, z: 1}
+      transformModified: 1
+    - name: bn_R_foot
+      position: {x: -.0741398707, y: 4.95910655e-08, z: 1.14440928e-08}
+      rotation: {x: .722818077, y: -.69103837, z: -.000118059805, w: -.000125507722}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Ctrl_Knee_L
+      position: {x: -.0466931053, y: -.0625476986, z: -.132611915}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: .505060375, y: .505060434, z: .505060434}
+      transformModified: 1
+    - name: Ctrl_Knee_R
+      position: {x: .0458645336, y: -.0625476763, z: -.132598788}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: .505060375, y: .505060434, z: .505060434}
+      transformModified: 1
+    - name: Ctrl_Leg_L
+      position: {x: -.0466931015, y: .00664709508, z: -.20673117}
+      rotation: {x: -2.38418579e-07, y: 0, z: -0, w: 1}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: PointH_L_Ankle
+      position: {x: 7.62939489e-09, y: 1.57356261e-08, z: -1.14440928e-08}
+      rotation: {x: -2.38497684e-08, y: 1.35000746e-14, z: -2.98023153e-08, w: 1}
+      scale: {x: 1.00000012, y: .999999821, z: 1}
+      transformModified: 1
+    - name: PointH_L_Toe
+      position: {x: -0, y: -.0986700282, z: -.00678693783}
+      rotation: {x: -.483850896, y: -.515643716, z: .483850896, w: .515643477}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Ctrl_Leg_R
+      position: {x: .0458645523, y: .00664689671, z: -.206725761}
+      rotation: {x: -2.38418579e-07, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: PointH_R_Ankle
+      position: {x: -3.81469745e-09, y: 1.52587898e-08, z: 0}
+      rotation: {x: -1.49796586e-09, y: 7.45057793e-09, z: 4.65661554e-09, w: 1}
+      scale: {x: 1, y: 1.00000024, z: 1.00000012}
+      transformModified: 1
+    - name: PointH_R_Toe
+      position: {x: -0, y: -.0986700282, z: -.0067869341}
+      rotation: {x: -.483850867, y: -.515643716, z: .483850867, w: .515643537}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: glove1
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: glove2
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: hair
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: hat
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: helper_controller
+      position: {x: 0, y: .160000011, z: 7.79823672e-09}
+      rotation: {x: 8.14603425e-08, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: helper_controllersphere
+      position: {x: 0, y: .160000011, z: 1.57206976e-08}
+      rotation: {x: 8.14603425e-08, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IK Chain001
+      position: {x: -.0453666747, y: .0437523536, z: -.00625079311}
+      rotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IK Chain002
+      position: {x: .0466333106, y: .0437522233, z: -.00624965038}
+      rotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IK_L_Hand
+      position: {x: -.203462362, y: .323444545, z: -.0162882563}
+      rotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IK_R_Hand
+      position: {x: .203118742, y: .323444575, z: -.0162870418}
+      rotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: pupil1
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: pupil2
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
