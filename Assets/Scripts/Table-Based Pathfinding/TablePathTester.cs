@@ -25,6 +25,8 @@ public class TablePathTester : MonoBehaviour
 
 	void Start()
 	{
+		startNode = pathfinder.GetIndexOfClosestNode( GameObject.FindGameObjectWithTag( "Player" ).transform );
+		targetNode = pathfinder.GetIndexOfClosestNode( target );
 		path = pathfinder.FindPath( startNode, targetNode );
 	}
 

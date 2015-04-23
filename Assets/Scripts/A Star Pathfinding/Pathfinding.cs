@@ -97,7 +97,7 @@ public class Pathfinding : MonoBehaviour
 	}
 
 	/**
-	 * Traces the path by finding parent of node,
+	 * Traces the path by finding parent of each node in the path,
 	 * and adding it to the path.
 	 * 
 	 * Path is then reversed to correct direction and returned.

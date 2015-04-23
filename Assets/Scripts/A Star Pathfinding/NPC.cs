@@ -33,8 +33,9 @@ public class NPC : MonoBehaviour
 		A_Star,
 		Table
 	};
-	// Don't change this, unless you want your computer to freeze
-	AI_Calculator aiType = AI_Calculator.A_Star;
+	// Be careful using Table-Based. It works most times, but (I think) if there are
+	// a lot of calculations in quick succession, it may kill your computer.
+	public AI_Calculator aiType = AI_Calculator.A_Star;
 
 	void Start()
 	{
@@ -57,19 +58,7 @@ public class NPC : MonoBehaviour
 				
 		}
 
-		if(aiType == AI_Calculator.A_Star)
-		{
-			path = pathfinder.FindPath( transform.position, target.position );
-			CheckGroundLevelAtAllNodes();
-		}
-		else
-		{
-			int index = table_pathfinder.GetIndexOfClosestNode( target );
-			Debug.Log( "Index is " + index );
-			if(index > -1)
-				path = table_pathfinder.FindPath( 0, index );
-			Debug.Log( "Path successfully created" );
-		}
+		path = CalculateNewPath( target );
 	}
 
 	// This is just to automagically adjust the position of nodes so that the NPC
@@ -84,6 +73,18 @@ public class NPC : MonoBehaviour
 		}
 	}
 
+	Vector3[] CheckGroundLevelAtAllNodes(Vector3[] path)
+	{
+		float nodeRadius = GameObject.FindObjectOfType<Grid>() != null ? GameObject.FindObjectOfType<Grid>().nodeRadius : 0.5f;
+ 
+		for(int i = 0; i < path.Length; i++)
+		{
+			path[i].y += nodeRadius;
+		}
+
+		return path;
+	}
+
 	void Update()
 	{
 		if (vision.targetInSight)
@@ -96,9 +97,8 @@ public class NPC : MonoBehaviour
 
 				//if(distance > 1)
 				//{
-					target = vision.lastTargetSighting;
-					path = pathfinder.FindPath( transform.position, target.position );
-					nextWaypoint = 0;
+
+				path = CalculateNewPath( vision.lastTargetSighting );
 				//}
 				speed = 1f;
 			}
@@ -112,9 +112,7 @@ public class NPC : MonoBehaviour
 		{
 			if(speed == 1)
 			{
-				target = targets[UnityEngine.Random.Range( 0, targets.Length )];
-				path = pathfinder.FindPath( transform.position, target.position );
-				nextWaypoint = 0;
+				path = CalculateNewPath( targets[UnityEngine.Random.Range( 0, targets.Length )] );
 			}
 			
 			speed = 0.5f;
@@ -126,24 +124,39 @@ public class NPC : MonoBehaviour
 
 		if(Input.GetKeyUp(KeyCode.R))
 		{
-			target = targets[UnityEngine.Random.Range( 0, targets.Length )];
-			if (aiType == AI_Calculator.A_Star)
-			{
-				path = pathfinder.FindPath( transform.position, target.position );
-				nextWaypoint = 0;
-				CheckGroundLevelAtAllNodes();
-			}
-			else
-			{
-				int index = table_pathfinder.GetIndexOfClosestNode( target );
-				if (index > -1)
-				{
-					path = table_pathfinder.FindPath( 0, index );
-					nextWaypoint = 0;
-				}
-					
-			}
+			path = CalculateNewPath( targets[UnityEngine.Random.Range( 0, targets.Length )] );
 		}
+	}
+
+	Vector3[] CalculateNewPath(Transform target)
+	{
+		this.target = target;
+
+		Vector3[] path;
+
+		switch(aiType)
+		{
+			case AI_Calculator.A_Star:
+				path = pathfinder.FindPath( transform.position, target.position );
+				break;
+			case AI_Calculator.Table:
+				int startNode = table_pathfinder.GetIndexOfClosestNode( transform );
+				int targetNode = table_pathfinder.GetIndexOfClosestNode( target );
+
+				if (startNode > -1 && targetNode > -1)
+					path = table_pathfinder.FindPath( startNode, targetNode );
+				else
+					path = new Vector3[0];
+				break;
+			default:
+				path = new Vector3[0];
+				break;
+		}
+
+		nextWaypoint = 0;
+		path = CheckGroundLevelAtAllNodes(path);
+
+		return path;
 	}
 
 	void MoveTowardsDestination()
@@ -190,15 +203,13 @@ public class NPC : MonoBehaviour
 
 	public void OnDrawGizmos()
 	{
-		Gizmos.color = Color.green;
-		Gizmos.DrawWireSphere( transform.position, radius );
 
 		if (path != null)
 		{
 			for (int i = nextWaypoint; i < path.Length; i++)
 			{
 				Gizmos.color = Color.black;
-				Gizmos.DrawWireCube( path[i], Vector3.one );
+				Gizmos.DrawWireCube( path[i], new Vector3(0.25f, 0.25f, 0.25f) );
 
 				if (i == nextWaypoint)
 				{

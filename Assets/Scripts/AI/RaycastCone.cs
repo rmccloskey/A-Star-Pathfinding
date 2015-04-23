@@ -35,6 +35,16 @@ public class RaycastCone : MonoBehaviour
 
 		Vector3 rayDirection = target.transform.position - transform.position;
 
+		// If target is very close to player and unobstructed
+		if(Physics.Raycast(transform.position, rayDirection, out hit, 1f))
+		{
+			if(hit.collider.gameObject == target)
+			{
+				lastTargetSighting = hit.transform;
+				return true;
+			}
+		}
+
 		// If target is within field of view
 		if((Vector3.Angle(rayDirection, transform.forward)) < fieldOfView / 2)
 		{
@@ -55,7 +65,7 @@ public class RaycastCone : MonoBehaviour
 	void OnDrawGizmos()
 	{
 		Gizmos.color = Color.blue;
-
+		
 		float halfFOV = fieldOfView / 2;
 
 		Quaternion leftRayRotation = Quaternion.AngleAxis( -halfFOV, Vector3.up );
