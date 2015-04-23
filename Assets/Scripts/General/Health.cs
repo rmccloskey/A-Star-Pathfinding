@@ -3,7 +3,6 @@ using System.Collections;
 
 public class Health : MonoBehaviour 
 {
-	[HideInInspector]
 	public float health = 100f;
 	public float maxHealth = 100f;
 
@@ -15,6 +14,9 @@ public class Health : MonoBehaviour
 	void Update()
 	{
 		ClampHealth( maxHealth );
+
+		if (Input.GetKeyUp( KeyCode.K ))
+			ReceiveDamage( 76 );
 	}
 
 	public void Heal(float amount)
@@ -24,11 +26,14 @@ public class Health : MonoBehaviour
 
 	public void ReceiveDamage(float amount)
 	{
+		float prevHealth = health;
 		health -= amount;
+		if (prevHealth > 25 && health <= 25)
+			GetComponent<NPC>().GoToHealthPack();
 	}
 
 	void ClampHealth(float max)
 	{
-		Mathf.Clamp( health, 0, maxHealth );
+		health = Mathf.Clamp( health, 0, maxHealth );
 	}
 }

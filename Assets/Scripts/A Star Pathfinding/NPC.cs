@@ -4,7 +4,15 @@ using System;
 
 public class NPC : MonoBehaviour 
 {
+	public enum AI_Type
+	{
+		PATROLLER,
+		FOLLOWER
+	};
+
 	Animator m_Animator;
+
+	Health health;
 
 	public Transform target;
 
@@ -37,9 +45,18 @@ public class NPC : MonoBehaviour
 	// a lot of calculations in quick succession, it may kill your computer.
 	public AI_Calculator aiType = AI_Calculator.A_Star;
 
+	bool doesPathNeedCalculating = true;
+
+
+	// Variables for table-based
+	[HideInInspector]
+	public int table_destination = 3;
+	int table_current = -1;
+
 	void Start()
 	{
 		m_Animator = GetComponent<Animator>();
+		health = GetComponent<Health>();
 
 		vision = GetComponentInChildren<RaycastCone>();
 
@@ -87,7 +104,13 @@ public class NPC : MonoBehaviour
 
 	void Update()
 	{
-		if (vision.targetInSight)
+		if (health.health <= 25)
+		{
+
+			;
+			//path = CalculateNewPath( FindNearestHealthPack( transform.position ) );
+		}
+		else if (vision.targetInSight)
 		{
 			try
 			{
@@ -95,26 +118,27 @@ public class NPC : MonoBehaviour
 
 				float distance = Vector3.Distance( pos, vision.lastTargetSighting.position );
 
-				//if(distance > 1)
-				//{
-
-				path = CalculateNewPath( vision.lastTargetSighting );
-				//}
+				if (distance > 1)
+				{
+					path = CalculateNewPath( vision.lastTargetSighting );
+				}
+				else
+					Debug.Log( "Target is too close to cause recalculation" );
 				speed = 1f;
 			}
-			catch(System.NullReferenceException e)
+			catch (System.NullReferenceException e)
 			{
 				;
 			}
-			
+
 		}
 		else
 		{
-			if(speed == 1)
+			if (speed == 1)
 			{
 				path = CalculateNewPath( targets[UnityEngine.Random.Range( 0, targets.Length )] );
 			}
-			
+
 			speed = 0.5f;
 		}
 			
@@ -156,12 +180,15 @@ public class NPC : MonoBehaviour
 		nextWaypoint = 0;
 		path = CheckGroundLevelAtAllNodes(path);
 
+		if (path.Length > 0)
+			doesPathNeedCalculating = false;
+
 		return path;
 	}
 
 	void MoveTowardsDestination()
 	{
-		if (nextWaypoint < path.Length)//IsInsideRadiusOf( path[path.Length - 1] ))
+		if (  nextWaypoint < path.Length)//IsInsideRadiusOf( path[path.Length - 1] ))
 		{
 			// Simplify movement by altering Y axis
 			Vector3 wp = path[nextWaypoint];
@@ -191,9 +218,39 @@ public class NPC : MonoBehaviour
 				nextWaypoint = 0;
 			}
 			else
+			{
 				m_Animator.SetFloat( "Speed", 0 );
+				path = new Vector3[0];
+			}
+				
 		}
 			
+	}
+
+	public void GoToHealthPack()
+	{
+		path = CalculateNewPath( FindNearestHealthPack( transform.position ) );
+	}
+
+	Transform FindNearestHealthPack(Vector3 position)
+	{
+		GameObject[] healthPacks = GameObject.FindGameObjectsWithTag( "Health Pack" );
+
+		float distance = 9999f;
+		Transform closest = null;
+
+		foreach(GameObject pack in healthPacks)
+		{
+			float dist = Vector3.Distance( position, pack.transform.position );
+
+			if(dist < distance)
+			{
+				distance = dist;
+				closest = pack.transform;
+			}
+		}
+
+		return closest;
 	}
 
 	bool IsInsideRadiusOf(Vector3 position)
